@@ -1,0 +1,17 @@
+<!--pages/login/login.wxml-->
+<view class="container" style="height:{{scheight}}px">
+  <image src="/images/背景.png" class="bgimg" style="height:{{scheight}}px"></image>
+  <image src="/images/welcome.png" class="welcome"></image>
+  
+    <form bindsubmit="formsubmit" class="form_c">
+      <view class="form_sbt">
+      <input type="text" class="ipt" name="username" focus="focus" placeholder="请输入姓名" placeholder-class="center"/>
+      <input type="number" class="ipt" name="sno" placeholder="请输入学号" placeholder-class="center" />
+      <button form-type="submit" class="btn"><text>立即登录</text></button>
+    </view>
+    <view class="txt"><text>还未注册？点击立即注册</text></view>
+    </form>
+  
+
+
+</view>
