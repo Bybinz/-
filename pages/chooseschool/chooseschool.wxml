@@ -1,0 +1,19 @@
+<!--pages/chooseschool/chooseschool.wxml-->
+<view class="container">
+  <view class="phoneinfo"></view>
+  <view class="navigation">
+    <view class="returncontainer">
+      <image class="return" src="https://cloud-minapp-40414.cloud.ifanrusercontent.com/1lmsFwg5ePklJoS3.png"></image>
+      <text class="return_txt" bindtap="reback">返回</text>
+    </view>
+    <text class="navigation_txt">选择学校</text>
+  </view>
+  <view class="itemscontainer" wx:for="{{schList}}" data-sc="{{item.schoolName}}" bindtap="toproject">
+    <text class="txt3">{{item.schoolName}}</text>
+    <image class="plus211" src="https://cloud-minapp-40414.cloud.ifanrusercontent.com/1lmsFwqd7WgN0SvL.png" wx:if="{{item.level=='985'}}"></image>
+    <image class="plus211" src="https://cloud-minapp-40414.cloud.ifanrusercontent.com/1lmsFwid576uJqqT.png" wx:if="{{item.level=='211'}}"></image>
+    <image class="plusyiliu" src="https://cloud-minapp-40414.cloud.ifanrusercontent.com/1lmsFwBzU3o9YHud.png" wx:if="{{item.level=='985' ||item.level=='211'}}"></image>
+    <image class="plus" src="https://cloud-minapp-40414.cloud.ifanrusercontent.com/1lmsFwHDi3SL4C58.png"></image>
+
+  </view>
+</view>

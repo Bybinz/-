@@ -1,0 +1,4 @@
+<!--pages/welcome/welcome.wxml-->
+<view class="container" style="height:{{scheight}}px">
+<image class="welimg" src="https://cloud-minapp-40414.cloud.ifanrusercontent.com/1lpsXZh4ocebIzHL.gif"></image>
+</view>

@@ -1,1 +1,287 @@
 /* pages/my/my.wxss */
+@import "/colorui/animation.wxss";
+@import "/colorui/icon.wxss";
+@import "/colorui/main.wxss";
+@import "/pages/mycollect/mycollect.wxss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+
+
+}
+
+.container1 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 221px;
+  background: #ffffff;
+  align-items: center;
+}
+
+.userinfocontainer {
+  display: flex;
+  flex-direction: column;
+  height: 130px;
+  margin-top: 26%;
+  justify-content: space-evenly;
+}
+.background {
+  width: 100%;
+  height: 382rpx;
+  position: absolute;
+  top: 0rpx;
+  background-image: linear-gradient(to top, #7d8ea6 0%, #787bcd 100%);
+}
+.tips{
+  font-size: 10px;
+}
+/* .name{
+  position:absolute;
+  bottom: 5%;
+} */
+.container2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: auto;
+  background: #ffffff;
+  align-items: center;
+  position: absolute;
+  margin-top: 250px;
+}
+
+.gifs {
+  position: absolute;
+  bottom: 0;
+  width: 150%;
+  background: unset;
+  margin: 0rpx;
+
+}
+
+
+.usermsg {
+  width: 667rpx;
+  height: 152rpx;
+
+  margin: 0 auto;
+  position: absolute;
+  bottom: -20%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: white;
+  border-radius: 15rpx;
+  box-shadow: 0px 1px 6px #A1A1A1;
+
+}
+
+.gktxt {
+  position: fixed;
+  z-index: 1;
+  left: 5%;
+  top: 5%;
+  color: white;
+}
+.user {
+  overflow: hidden;
+  width: 170rpx;
+  height: 170rpx;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 5rpx 0rpx 20rpx #333333;
+}
+.userimgcontainer {
+  width: 170rpx;
+  height: 180rpx;
+}
+.userani{
+  animation: updown 1s linear alternate infinite;
+}
+@keyframes updown{
+  from {
+    margin-top:0px;
+  }
+  to{
+    margin-top: 5px;
+  }
+}
+.userimg1 {
+  width: 170rpx;
+  height: 170rpx;
+  margin-top: -5%;
+  margin-left: 3%;
+  border-radius: 50%;
+}
+
+.txt1 {
+  color: #7bb1ff;
+  font-size: 32rpx;
+  margin-left: 40rpx;
+}
+
+.txt2 {
+  color: #2d373f;
+  font-size: 24rpx;
+  margin-left: 30rpx;
+}
+
+.itemscontainer {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  border-bottom: 2px solid #e1dfdf;
+  height: 100rpx;
+  align-items: center;
+  position: relative;
+  border-radius: 30rpx;
+  box-shadow: 0px 0px 1px #A1A1A1;
+  margin-bottom: 10px;
+  padding-left: 15px;
+}
+
+.gray {
+  height: 1px;
+  width: 90%;
+  background: rgb(196, 195, 195);
+  position: absolute;
+  margin-top: 230px ;
+  bottom: -5%;
+}
+
+.itemscontainer1 {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  border-bottom: 2px solid #e1dfdf;
+  border-top: 2px solid #e1dfdf;
+  height: 110rpx;
+  align-items: center;
+  position: relative;
+
+}
+
+.img1 {
+  width: 62rpx;
+  height: 31px;
+
+}
+
+.txt3 {
+  color: black;
+  font-size: 40rpx;
+  margin-left: 30rpx;
+
+}
+
+.img2 {
+  width: 16rpx;
+  height: 8px;
+  position: absolute;
+  right: 9%;
+
+}
+
+.iptcontent {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0;
+  position: fixed;
+  height: 708rpx;
+  align-items: center;
+  box-shadow: 0px 0px 10px #C4C4C4;
+  border-radius: 10rpx;
+  top: 20%;
+  background: white;
+  z-index: 10000;
+}
+
+.title {
+  width: 100%;
+  height: 90rpx;
+  border-bottom: 1px solid black;
+  text-align: center;
+}
+
+.content {
+  width: 100%;
+  height: 90rpx;
+  border-bottom: 1px solid black;
+  text-align: center;
+}
+
+.btn {
+  width: 300rpx;
+  height: 102rpx;
+  text-align: center;
+  line-height: 102rpx;
+  border-radius: 50px;
+  border: 1px solid black;
+  color: black;
+  background: white;
+  margin-top: 10%;
+  position: absolute;
+  bottom: 6%;
+}
+
+.usermsg1 {
+  display: flex;
+  flex-direction: column;
+
+  margin-left: 30rpx;
+  margin-top: 5%;
+
+}
+
+.usermsg2 {
+  display: flex;
+  flex-direction: row;
+  font-size: 21rpx;
+  color: #504f4f;
+  margin-top: 5%;
+  text-align: center;
+
+}
+
+.gender {
+  border: 1px solid #cdcdcd;
+  width: 46rpx;
+  margin-right: 14rpx;
+
+}
+
+.age {
+  border: 1px solid #cdcdcd;
+  width: 56rpx;
+  margin-right: 14rpx;
+}
+
+.xingzuo {
+  border: 1px solid #cdcdcd;
+  width: 76rpx;
+}
+
+.txt11 {
+  color: #7bb1ff;
+  font-size: 32rpx;
+
+}
+
+.edit {
+  color: #7bb1ff;
+  width: 80rpx;
+  position: absolute;
+  right: 10%;
+}

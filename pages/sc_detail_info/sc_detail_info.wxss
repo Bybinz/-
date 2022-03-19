@@ -1,0 +1,20 @@
+/* pages/sc_detail_info/sc_detail_info.wxss */
+@import '/pages/navigations.wxss';
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+ align-items: center;
+}
+.txt{
+  color:#474747;
+  font-size: 32rpx;
+  width: 90%;
+  height: auto;
+  line-height: 60rpx;
+  text-indent: 2em;
+  text-align: left;
+}
+

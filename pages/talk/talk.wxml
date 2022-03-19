@@ -1,2 +1,50 @@
 <!--pages/talk/talk.wxml-->
-<text>pages/talk/talk.wxml</text>
+<view class="container ">
+  <!-- style="height:{{scheight}}px" -->
+  <!-- {{havedui?'gray':''}} -->
+  <view class="phoneinfo"></view>
+  <view class="navigation">
+    <text class="navigation_txt">待办</text>
+  </view>
+  <view class="plus">
+    <image src="https://cloud-minapp-40414.cloud.ifanrusercontent.com/1lnfaUXQ6aW90Rzt.png" class="img-style"
+      animation="{{animDocument}}" bindtap="document"></image>
+    <!-- <image src="../../images/3.png" class="img-style" animation="{{animVedio}}" bindtap="vedio" wx:if="{{true}}">
+    </image> -->
+    <image src="https://cloud-minapp-40414.cloud.ifanrusercontent.com/1lnfaRoCVwFf6UDv.png" class="img-plus-style"
+      animation="{{animPlus}}" bindtap="plus"></image>
+  </view>
+  <view class="iptcontent" wx:if="{{havedui}}">
+    <image src="https://cloud-minapp-40414.cloud.ifanrusercontent.com/1lpsXRpib7R4VeU4.png" class="close"
+      bindtap="close"></image>
+    <textarea class="title" placeholder="标题" bindinput="titleinput" value="{{titlevalue}}"></textarea>
+    <textarea class="content" placeholder="内容" bindinput="contentinput" value="{{contentvalue}}"></textarea>
+    <button class="btn" bindtap="submititem">确定</button>
+  </view>
+  <view class="containers ">
+
+    <view class="meiyou" wx:if="{{!tasklistlen}}">
+      <image src="https://cloud-minapp-40414.cloud.ifanrusercontent.com/1lpsXPZ4GaDCk3Zu.png" class="huojian"></image>
+      <text class="kongkong">这里空空如也~</text>
+    </view>
+    <view wx:else class="container1s cu-list">
+      <view class="container1 cu-item {{item.isleft?'move-cur':''}}" wx:for="{{tasklist}}" wx:key="key" bindtouchstart="ListTouchStart" bindtouchend="ListTouchEnd"
+        data-itemid="{{item.taskId}}">
+        <view class="container11">
+          <image
+            src="{{item.havedone?'https://cloud-minapp-40414.cloud.ifanrusercontent.com/1lnfaW07Nj0BuPn1.png':'https://cloud-minapp-40414.cloud.ifanrusercontent.com/1lnfaZkCEfb3RUzC.png'}}"
+            class="container12" bindtap="changedone" data-itemid="{{item.taskId}}"></image>
+        </view>
+        <!-- {{item.havedone?'../../images/对号1.png':'../../images/对号2.png'}} -->
+        <view class="container22">
+          <text class="container221">{{item.title}}</text>
+          <view class="container222">{{item.content}}</view>
+
+        </view>
+        <view class="move bg-red" bindtap="deleteitem" data-itemid="{{item.taskId}}">
+          删除
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

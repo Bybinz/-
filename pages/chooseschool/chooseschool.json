@@ -1,0 +1,8 @@
+{
+  "usingComponents": {},
+  "navigationBarTitleText":"选择院校",
+  "navigationBarBackgroundColor":"#75adff",
+  "navigationBarTextStyle":"white",
+  "navigationStyle": "custom"
+
+}

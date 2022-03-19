@@ -1,0 +1,27 @@
+<!--pages/articledetail/articledetail.wxml-->
+<view class="container">
+  <view class="phoneinfo"></view>
+  <view class="navigation">
+    <view class="returncontainer" bindtap="reback">
+      <image class="return" src="https://cloud-minapp-40414.cloud.ifanrusercontent.com/1lmsFwg5ePklJoS3.png"></image>
+      <text class="return_txt">返回</text>
+    </view>
+    <text class="navigation_txt">详细信息</text>
+  </view>
+  <text class="txt">{{detailList.title}}</text>
+  <image class="img" src="{{detailList.secondimg}}"></image>
+  <textarea name="" id="" cols="50" rows="100" class="txt1">
+    {{detailList.article}}
+  </textarea>
+  <view class="collectcontainer">
+    <view class="collect" bindtap="collectarticle">
+      <image src="{{iscollected?'https://cloud-minapp-40414.cloud.ifanrusercontent.com/1ls5RkL2siCNZREh.png':'https://cloud-minapp-40414.cloud.ifanrusercontent.com/1ls5RgVANzdracRj.png'}}" class="collectimg"></image>
+      <text class="collecttxt {{iscollected?'blue':''}}">收藏</text>
+    </view>
+    <button class="share" open-type="share" >
+      <image src="https://cloud-minapp-40414.cloud.ifanrusercontent.com/1ls5RaRfm3BmOADr.png" class="collectimg"></image>
+      <text class="sharetxt blue">分享</text>
+    </button>
+  </view>
+
+</view>

@@ -19,7 +19,8 @@ Page({
     }).then(res => {
       console.log(res.result.openid)
     })
-
+   var loi=['男','女']
+   console.log(loi.indexOf('男'))
   },
   getUserProfile: function (e){
     wx.getUserProfile({

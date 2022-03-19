@@ -1,0 +1,26 @@
+<!--pages/contact_info/contact_info.wxml-->
+<view class="container">
+  <view class="phoneinfo"></view>
+  <view class="navigation">
+  <view class="returncontainer">
+    <image class="return" src="https://cloud-minapp-40414.cloud.ifanrusercontent.com/1lmsFwg5ePklJoS3.png"></image>
+    <text class="return_txt" bindtap="reback">返回</text>
+  </view>
+    <text class="navigation_txt">联系方式</text>
+  </view>
+  <view wx:for="{{contactinfo}}" class="containers" wx:key="key">
+    <view class="container1">
+      <view class="container11">
+        <image src="{{item.wxAvatar}}" class="container12"></image>
+      </view>
+      <view class="container22">
+        <text class="container221">{{item.wxName}}</text>
+        <view class="container222">QQ:{{item.qqno}}</view>
+      </view>
+      <view class="container33">
+       <text>{{item.schoolName}}</text>
+       <text>{{item.major}}系</text>
+      </view>
+    </view>
+  </view>
+</view>

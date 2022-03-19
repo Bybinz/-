@@ -13,12 +13,6 @@
     "miniprogram": {
       "list": [
         {
-          "name": "pages/first/first",
-          "pathName": "pages/first/first",
-          "query": "",
-          "scene": null
-        },
-        {
           "name": "pages/login/login",
           "pathName": "pages/login/login",
           "query": "",
@@ -33,6 +27,90 @@
         {
           "name": "pages/index/index",
           "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/first/first",
+          "pathName": "pages/first/first",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/talk/talk",
+          "pathName": "pages/talk/talk",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/my/my",
+          "pathName": "pages/my/my",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/kaoyaninfo/kaoyaninfo",
+          "pathName": "pages/kaoyaninfo/kaoyaninfo",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/contact/contact",
+          "pathName": "pages/contact_info/contact_info",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/school_search/school_search",
+          "pathName": "pages/school_search/school_search",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/school_detail/school_detail",
+          "pathName": "pages/school_detail/school_detail",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/sc_detail_info/sc_detail_info",
+          "pathName": "pages/sc_detail_info/sc_detail_info",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/articledetail/articledetail",
+          "pathName": "pages/articledetail/articledetail",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/mycollect/mycollect",
+          "pathName": "pages/mycollect/mycollect",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/chooseproject/chooseproject",
+          "pathName": "pages/chooseproject/chooseproject",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/myliulan/myliulan",
+          "pathName": "pages/myliulan/myliulan",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/publish/publish",
+          "pathName": "pages/publish/publish",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/welcome/welcome",
+          "pathName": "pages/welcome/welcome",
           "query": "",
           "scene": null
         }

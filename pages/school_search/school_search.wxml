@@ -1,0 +1,34 @@
+<!--pages/school_search/school_search.wxml-->
+<view class="container">
+  <view class="phoneinfo"></view>
+  <view class="navigation">
+    <view class="returncontainer">
+      <image class="return" src="https://cloud-minapp-40414.cloud.ifanrusercontent.com/1lmsFwg5ePklJoS3.png"></image>
+      <text class="return_txt" bindtap="reback">返回</text>
+    </view>
+    <text class="navigation_txt" wx:if="{{totype=='lookmore'}}">院校选择</text>
+    <text class="navigation_txt" wx:else>院校查询</text>
+  </view>
+  <view class="container1">
+    <view class="container11">
+      <text class="txt1">985院校</text>
+      <text class="txt2">国内共39所</text>
+    </view>
+    <view class="container11">
+      <text class="txt1">211院校</text>
+      <text class="txt2">国内共115所</text>
+    </view>
+  </view>
+  <view class="container2">
+    <scroll-view scroll-y="true" bindscrolltoupper="upper" bindscrolltolower="lower" scroll-top="0" class="province">
+      <view class="scroll-view-item1 {{ischoose[item.id]?'selected':''}}" wx:for="{{proschList}}" bindtap="chooseprocince" data-id="{{item.id}}">
+        {{item.province}}</view>
+    </scroll-view>
+    <scroll-view scroll-y="true" bindscrolltoupper="upper" bindscrolltolower="lower" scroll-top="0" class="school">
+      <view class="scroll-view-item2" wx:for="{{schoolList}}" bindtap="chooseschool" data-scn="{{item}}">
+        <text>{{item}}</text>
+        <!-- <image class="item2img" src="https://cloud-minapp-40414.cloud.ifanrusercontent.com/1lmsFwbhyNsmOKtX.png"></image> -->
+      </view>
+    </scroll-view>
+  </view>
+</view>

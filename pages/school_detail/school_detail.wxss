@@ -1,0 +1,150 @@
+/* pages/school_detail/school_detail.wxss */
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+ align-items: center;
+}
+
+.container1 {
+  display: flex;
+  flex-direction:column;
+  width: 90%;
+  margin: 0;
+  padding: 0;
+  height: 160rpx;
+  align-items: center;
+  justify-content: space-evenly;
+  background: #ffffff;
+}
+
+.container2 {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height:281rpx;
+  margin: 0;
+  padding: 0;
+  justify-content: space-around;
+}
+.container3{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 690rpx;
+  margin: 0;
+  padding: 0;
+}
+.plus211{
+  width: 53rpx;
+  height: 32rpx;
+  margin-left: 27rpx;
+}
+.plusyiliu{
+  width: 105rpx;
+  height: 32rpx;
+  margin-left: 10rpx;
+}
+.txt{
+  color:#474747;
+  font-size: 36rpx;
+  /* line-height: 94rpx; */
+  
+}
+.txt1{
+  color:#bcbfc1;
+  font-size: 26rpx;
+
+  /* line-height: 94rpx; */
+  
+}
+.txt2{
+  color:#6e95d6;
+  font-size: 26rpx;
+  margin-left: 12px;
+  /* line-height: 94rpx; */
+}
+.txt3{
+  color:#7e7f7f;
+  font-size: 18rpx;
+  width: 100%;
+  text-indent: 18px;
+  margin-top: 16rpx;
+  /* line-height: 94rpx; */
+}
+.container11{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 40rpx;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+.container12{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 36rpx;
+  margin: 0;
+  padding: 0;
+}
+.container21{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 40rpx;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+.container31{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 40rpx;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+.container32{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+.itemscontainer{
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  height: 94rpx;
+  align-items: center;
+  position: relative;
+  border-bottom: 1px solid #A1A1A1;
+  color: #5b5c5b;
+  line-height: 64rpx;
+}
+.bluecol{
+  background: #6e95d6;
+  height: 40rpx;
+  width: 6px;
+}
+.plus{
+  width: 30rpx;
+  height: 30rpx;
+  position: absolute;
+  right: 6%;
+  
+}
+.txt4{
+  color:#474747;
+  font-size: 32rpx;
+  height: 36rpx;
+  width: 276rpx;
+  line-height: 36rpx;
+}

@@ -1,0 +1,102 @@
+/* pages/kaoyaninfo/kaoyaninfo.wxss */
+@import "/pages/navigations.wxss";
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+}
+.container1 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  height: 90rpx;
+  background: #a2c9ff;
+  align-items:center;
+}
+.container2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 18%;
+ 
+  align-items: center;
+
+
+}
+.titlecontainer{
+  width: 100%;
+  height: 66rpx;
+  display: flex;
+  flex-direction: row;
+  bottom: 0;
+  position: absolute;
+ 
+  justify-content: space-around;
+  text-align: center;
+  line-height: 66rpx;
+}
+.title{
+  font-size: 12px;
+  width: 130px;
+}
+.selected{
+  border-bottom:4px solid #5781bd;
+  font-size: 15px;
+}
+.itemscontainer{
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  border-radius: 15rpx;
+  box-shadow:0px 1px 2px #A1A1A1;
+  height: 56rpx;
+  align-items: center;
+  position: relative;
+  margin-bottom: 10px;
+}
+.img2{
+  width: 26rpx;
+  height: 13px;
+  position: absolute;
+  right: 9%;
+  
+}
+.pinglun{
+  width: 40rpx;
+  height: 40rpx;
+  
+}
+.txt{
+  margin-left: 4rpx;
+  font-size: 20rpx;
+  color: #a3a1ae;
+}
+.txt3{
+  color:#474747;
+  font-size: 30rpx;
+  margin-left: 30rpx;
+  
+}
+.scontainer{
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  align-items: center;
+  margin-left: 20px;
+}
+.plus{
+  width: 30rpx;
+  height: 30rpx;
+  position: absolute;
+  right: 6%;
+  
+}

@@ -1,0 +1,95 @@
+/* pages/school_search/school_search.wxss */
+@import '/pages/navigations.wxss';
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+ background: #f3f7fa;
+}
+
+.container1 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 252rpx;
+  align-items: center;
+  justify-content: space-around;
+  background: #ffffff;
+}
+
+.container2 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 80%px;
+  margin: 0;
+  padding: 0;
+  margin-top: 5%;
+  background: #ffffff;
+  box-shadow:0px 0px 10px #edfaf4;
+
+
+}
+.container11 {
+  display: flex;
+  flex-direction: column;
+  width: 335rpx;
+  height: 178rpx;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  justify-content:space-evenly;
+  border-radius: 10px;
+  box-shadow:0px 0px 10px #edfaf4;
+}
+
+.txt1{
+  font-size: 38rpx;
+  color: #4d524f;
+}
+.txt2{
+  font-size: 28rpx;
+  color: #7c847f;
+}
+
+.school{
+  width: 70%;
+  height: 500px;
+}
+.province{
+  width: 30%;
+  height: 500px;
+
+
+}
+.scroll-view-item1{
+  width: 100%;
+  height: 96rpx;
+  text-align: center;
+  line-height:96rpx ;
+  background: #f7f8f7;
+  border-bottom: 2px solid #ffffff;
+}
+.selected{
+  background: #ffffff;
+}
+.scroll-view-item2{
+  width: 100%;
+  height: 96rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 2px solid #f7f8f7;
+  padding-left: 24rpx;
+}
+.item2img{
+  width: 36rpx;
+  height: 36rpx;
+  position: absolute;
+  right: 8%;
+  
+}

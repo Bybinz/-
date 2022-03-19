@@ -1,0 +1,57 @@
+<!--pages/mycollect/mycollect.wxml-->
+<view class="container">
+  <image src="https://cloud-minapp-40414.cloud.ifanrusercontent.com/1lpsSUewAmHxXyC6.png" class="return"
+    bindtap="return"></image>
+  <view class="container1">
+    <view class='background'></view>
+    <image src="https://cloud-minapp-40414.cloud.ifanrusercontent.com/1lpsWQwTtRrt4Vxx.gif" mode="widthFix"
+      class="gif-black response gifs"></image>
+
+    <view class="userinfocontainer">
+      <view class='user'>
+        <open-data type="userAvatarUrl"></open-data>
+      </view>
+      <view class="name">
+        <open-data type="userNickName"></open-data>
+      </view>
+    </view>
+  </view>
+
+  <view class="container2" wx:if="{{istiku&&!notiku}}">
+    <view class="container21" wx:for="{{collects}}" wx:key="key" bindtap="gettotalid" data-totalid="{{item.dataId}}">
+      <view class="itemscontainer">
+        <view class="txt3"><text class="kong">{{item.dataId}}</text>{{item.subject}}</view>
+        <image class="img2"
+          src="{{item.isPop?'https://cloud-minapp-40414.cloud.ifanrusercontent.com/1lpsRz3lniDiZCDt.png':'https://cloud-minapp-40414.cloud.ifanrusercontent.com/1lpsS29BMOjtZCg5.png'}}"
+          bindtap="pop"></image>
+        <image class="img3" src="https://cloud-minapp-40414.cloud.ifanrusercontent.com/1lpsRwWJAtjRA9yS.png" catchtap="deleteitem" data-totalid="{{item.dataId}}"></image>
+      </view>
+      <view class="detailcontainer" wx:if="{{item.isPop}}">
+        <view wx:for="{{item.postGraduateDataInfos}}" data-detailurl="{{item.dataUrl}}" class="detailitem"
+          bindtap="showurl">
+          <view class="txt4" selectable="true"><text class="kong">{{item.dataId}}</text>{{item.dataName}}</view>
+          <!-- <view class="txt3">081200计算机科学与技术</view> -->
+        </view>
+      </view>
+    </view>
+  </view>
+  <view wx:if="{{istiku&&notiku}}">还没有加入题库喔</view>
+  <view class="cu-card article  width" wx:if="{{isshoucang&&!noshoucang}}">
+    <view class="cu-item shadow" wx:for="{{mycollect}}" data-articleid="{{item.articleId}}" bindtap="toarticledetail">
+      <view class="title">
+        <view class="text-cut">{{item.title}}</view>
+      </view>
+      <view class="content">
+        <image src="https://ossweb-img.qq.com/images/lol/web201310/skin/big10006.jpg" mode="aspectFill"></image>
+        <view class="desc">
+          <view class="text-content"> {{item.article}}</view>
+          <view>
+            <view class="cu-tag bg-red light sm round">{{item.type1}}</view>
+            <view class="cu-tag bg-green light sm round">{{item.type2}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view wx:if="{{isshoucang&&noshoucang}}">还没有收藏喔</view>
+</view>

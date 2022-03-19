@@ -1,0 +1,34 @@
+<!--pages/publish/publish.wxml-->
+<view class="container">
+  <view class="phoneinfo"></view>
+  <view class="navigation">
+    <view class="returncontainer" bindtap="reback">
+      <image class="return" src="https://cloud-minapp-40414.cloud.ifanrusercontent.com/1lmsFwg5ePklJoS3.png"></image>
+      <text class="return_txt">返回</text>
+    </view>
+    <text class="navigation_txt">意见反馈</text>
+  </view>
+  <view class="container1">
+    <!-- <input class="title" placeholder="请填写10个字以上的问题描述以便我们提供更好的帮助
+" placeholder-class="pls"  /> -->
+    <!-- <text class="choosetag">选择标签</text>
+    <view class="tagcontainer" >
+      <view class="course" wx:for="{{courses}}" wx:key="courses">{{item.name}}</view>  
+    </view> -->
+    <text class="itemtext">问题和意见</text>
+    <textarea class="content" placeholder="请填写10个字以上的问题描述以便我们提供更好的帮助" bindinput="questioninput" value="{{questionvalue}}"></textarea>
+    <text class="itemtext">选择图片（提供问题截图,最多可选择三张）</text>
+    <view class="imgcontainers">
+      <view class="selectimgcontainer" wx:if="{{havechoose}}">
+        <image class="selectimg" wx:for="{{imgpaths}}" src="{{item}}"></image>
+      </view>
+      <view class="imgcontainer" bindtap="chooseimg" wx:if="{{imglen<3}}">
+        <image class="addimg" src="https://cloud-minapp-40414.cloud.ifanrusercontent.com/1lmsFw8Ta1c3OZ6j.png"></image>
+      </view>
+    </view>
+    <view class="redtext" bindtap="resetimg">清空图片</view>
+    <text class="itemtext">联系电话</text>
+    <input class="title" placeholder="便于我们与你联系" placeholder-class="pls" bindinput="phoneinput" value="{{phonevalue}}" />
+  </view>
+  <button class="btn" bindtap="submit">提交</button>
+</view>

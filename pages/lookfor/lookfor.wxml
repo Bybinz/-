@@ -1,0 +1,27 @@
+<!--pages/lookfor/lookfor.wxml-->
+<view class="container">
+  <view class="infocontainer" bindsubmit="formsubmit">
+    <view class="txt">请选择您的目标院校和专业</view>
+    <!-- <input  class="title" name="school" placeholder="选择目标院校" placeholder-class="pls" /> -->
+    <picker bindchange="bindPickerChange1" value="{{index1}}" range="{{array1}}" name="schoolName">
+      <view class="title {{index1!=0?'afterpicker':''}}">
+        <text wx:if="{{index1==0}}">请选择学校：</text>{{array1[index1]}}
+      </view>
+    </picker>
+    <!-- <input class="title" name="zhuanye" placeholder="选择目标专业"  placeholder-class="pls"/> -->
+    <picker bindchange="bindPickerChange2" value="{{index2}}" range="{{departmentname}}" 
+      name="major" bindcancel="canclechoose" wx:if="{{index1}}">
+      <view class="title ">
+        <!-- {{!index2?'':'afterpicker'}} -->
+        <text wx:if="{{!index2 && !index1}}">请选择专业：</text>{{departmentname[index2]}}
+      </view>
+    </picker>
+    <view type="text" class="title" bindtap="checkschool" wx:if="{{index1==0}}"> 
+      请选择专业：无
+    </view>
+    <!-- <view type="text" class="ipt1" bindtap="checkschool" wx:else>  -->
+    
+
+    <button class="btn" bindtap="tolookfor">寻找学长学姐</button>
+  </view>
+</view>

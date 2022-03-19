@@ -1,0 +1,69 @@
+/* pages/lookfor/lookfor.wxss */
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+}
+.afterpicker{
+  color: black;
+}
+.title{
+  height: 90rpx;
+  width: 610rpx;
+  border: 1px solid #e2e2e3;
+  border-radius: 10px;
+  margin-top: 60rpx;
+  line-height: 90rpx;
+  text-align: center;
+}
+.ipt1{
+  width: 610rpx;
+  height: 90rpx;
+  border: 1px solid #e2e2e3;
+  border-radius: 10px;
+  background-color: white;
+  font-size: 36rpx;
+  border-radius: 25rpx;
+  text-align: center;
+  line-height: 90rpx;
+}
+.infocontainer {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  height: 608rpx;
+  align-items:center;
+  box-shadow:0px 0px 10px #C4C4C4;
+  border-radius: 10rpx;
+  top: 20%;
+}
+.btn{
+  width: 610rpx;
+  height: 102rpx;
+  text-align: center;
+  line-height: 102rpx;
+  border-radius: 50px;
+  color: white;
+  background-color:  #6cb4ff;
+  margin-top: 10%;
+}
+.txt{
+  font-size: 28rpx;
+  color: #999999;
+  width: 610rpx;
+  text-align:center;
+  height: 87rpx;
+  line-height: 87rpx;
+  border-bottom: 1px solid #cacacc;
+  
+}
+
+.pls{
+  margin-left: 10px;
+}

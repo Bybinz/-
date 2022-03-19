@@ -1,2 +1,59 @@
 <!--pages/my/my.wxml-->
-<text>pages/my/my.wxml</text>
+<view class="container" style="height:{{scheight}}px">
+  <!-- <view class="phoneinfo"></view>
+  <text class="gktxt">广开研路</text>
+  <view class="iptcontent" wx:if="{{havedui}}">
+    <input class="title" placeholder="姓名" bindinput="nameinput" value="{{usertrueinfo.username}}" />
+    <input class="content" placeholder="性别" bindinput="sexinput" value="{{gender1[usertrueinfo.sex]}}" />
+    <input class="content" placeholder="学历" bindinput="educationinput" value="{{usertrueinfo.education}}" />
+    <input class="content" placeholder="联系方式" bindinput="phoneinput" value="{{usertrueinfo.phone}}" />
+    <input class="content" placeholder="QQ号" bindinput="qqinput" value="{{usertrueinfo.qqno}}" />
+    <button class="btn" bindtap="submititem">保存</button>
+  </view>
+  <view class="container1">
+
+    <view class="usermsg" wx:if="{{!isuserauth}}">
+      <image class="userimg" src="https://cloud-minapp-40414.cloud.ifanrusercontent.com/1lmsFwM0tIKt9CND.png"></image>
+      <button class="txt1" bindtap="getUserProfile">登录/注册</button>
+      <text class="txt2">体验更多功能哦~</text>
+    </view>
+    <view class="usermsg" wx:else>
+      <image class="userimg1" src="{{userwxinfo.avatarUrl}}"></image>
+      <view class="usermsg1">
+        <text class="txt11">{{usertruename}}</text>
+        <view class="usermsg2">
+          <text class="gender">{{gender[userwxinfo.gender]}}</text>
+          <text class="edit" bindtap="editinfo">编辑资料</text>
+        </view>
+      </view>
+    </view>
+
+  </view> -->
+  <view class="container1">
+    <view class='background'>
+      <image src="/images/wave.gif" mode="widthFix" class="gif-black response gifs" ></image></view>
+    
+    <view class="userinfocontainer" >
+      <view class="userimgcontainer ">
+        <image class="user" src="https://cloud-minapp-40414.cloud.ifanrusercontent.com/1lmsFwM0tIKt9CND.png" wx:if="{{!havelogin}}" bindtap="getUserProfile"></image>
+        <image class="user {{havelogin?'userani':''}}" src="{{userwxinfo.avatarUrl}}" wx:else></image>
+      </view>
+      <view class="name">
+        <text  wx:if="{{isuserauth}}">{{usertruename}}</text>
+        <text  wx:else>未登录</text>
+      </view>
+      <view class="tips" wx:if="{{!isuserauth}}">点击头像登录</view>
+    </view>
+    <!-- <button class="txt1" bindtap="getUserProfile">登录/注册</button>
+    <text class="txt2">体验更多功能哦~</text> -->
+    <view class="gray"></view>
+  </view>
+
+  <view class="container2">
+    <view class="itemscontainer" wx:for="{{msglist}}" wx:key="key" bindtap="getfucid" data-fucid="{{item.id}}">
+      <image class="img1" src="{{item.img}}"></image>
+      <view class="txt3">{{item.txts}}</view>
+      <image class="img2" src="https://cloud-minapp-40414.cloud.ifanrusercontent.com/1lmsFwfIDbbjw8md.png"></image>
+    </view>
+  </view>
+</view>

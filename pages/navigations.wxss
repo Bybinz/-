@@ -1,0 +1,45 @@
+.navigation {
+  display: flex;
+  flex-direction:row;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 83rpx;
+  align-items: center;
+  
+  background:linear-gradient(to bottom,#73acff,#c7deff);
+}
+.returncontainer{
+  display: flex;
+  flex-direction:row;
+  height: 33rpx;
+  width: 100rpx;
+  align-items: center;
+  position:absolute;
+  left: 3%;
+}
+.phoneinfo{
+  width: 100%;
+  background: #73acff;
+  height: 66rpx;
+}
+.return{
+  width: 30rpx;
+  height: 30rpx;
+}
+.return_txt{
+  color:#ffffff;
+  font-size: 33rpx;
+  height: 33rpx;
+  width: 110rpx;
+  line-height: 33rpx;
+}
+.navigation_txt{
+  color:#ffffff;
+  font-size: 33rpx;
+  height: 33rpx;
+  width: 276rpx;
+  line-height: 33rpx;
+  margin: 0 auto;
+  text-align: center;
+}

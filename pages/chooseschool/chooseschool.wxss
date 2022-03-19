@@ -1,0 +1,43 @@
+/* pages/chooseschool/chooseschool.wxss */
+@import '/pages/navigations.wxss';
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+}
+.itemscontainer{
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  height: 94rpx;
+  align-items: center;
+  position: relative;
+  border-bottom: 1px solid #A1A1A1;
+  color: #5b5c5b;
+}
+.plus{
+  width: 30rpx;
+  height: 30rpx;
+  position: absolute;
+  right: 6%;
+  
+}
+.plus211{
+  width: 53rpx;
+  height: 32rpx;
+  margin-left: 27rpx;
+}
+.plusyiliu{
+  width: 105rpx;
+  height: 32rpx;
+  margin-left: 10rpx;
+}
+.txt3{
+  color:#474747;
+  font-size: 33rpx;
+  /* line-height: 94rpx; */
+  
+}

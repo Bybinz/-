@@ -1,10 +1,10 @@
 /* pages/register/register.wxss */
+@import '/pages/login/login.wxss';
 
 .container{
   display:flex;
   flex-direction: column;
-  width: 100%;
-  
+  width: 100%; 
   margin: 0;
   padding: 0;
   position: relative;
@@ -26,29 +26,84 @@
   display: flex;
   flex-direction: column;
   width: 300px;
-  height: 90%;
+  height: auto;
   position: absolute;
-  top:5%;
+  top:15%;
   align-items: center;
+
+  
+}
+.infocontainer{
+  border-radius: 50rpx;
+
+  
+}
+.itemcontainer{
+  display: flex;
+  flex-direction: row;
+  background: #ffffff;
+  align-items: center;
+  height: 45px;
+  justify-content:space-evenly;
+  border-bottom: 1px solid gray;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .ipt{
-  width: 530rpx;
+  width: 430rpx;
+  height: 40px;
+
+  text-align: right;
+
+  
+}
+
+.noborder{
+  border: none;
+}
+.lrtr{
+  border-top-left-radius:30rpx ;
+  border-top-right-radius:30rpx ;
+}
+.lrbr{
+  border-bottom-left-radius:30rpx ;
+  border-bottom-right-radius:30rpx ;
+}
+.ipt1{
+  width: 430rpx;
   height: 45px;
   background-color: white;
-
-  border-radius: 25rpx;
-  margin: 10px 0;
-  text-align: center;
+  font-size: 32rpx;
+  text-align: right;
+  line-height: 45px;
+  color: #888888;
 }
-.btn{
-  margin-top: 30px;
+
+.schoollist{
+  width: 530rpx;
+  height: 45px;
+  font-size: 45rpx;
+  line-height: 45rpx;
+  background-color: white;
+  text-align: left;
+  margin-top: -10px;
+  
+}
+.province{
+  width: 530rpx;
+  height: 90px;
+
+
+}
+.scroll-view-item1{
   width: 100%;
   height: 45px;
   text-align: center;
-  border-radius: 100px;
-  color: white;
-  background:linear-gradient(to left,#97effd, #85a9ff);
+  line-height:96rpx ;
+  background: #f7f8f7;
+  border-bottom: 2px solid #ffffff;
 }
+
 .txt{
   width: 100%;
   height: 45px;
@@ -62,29 +117,43 @@
 }
 .gender{
   text-align: center;
-  width: 530rpx;
+  display: flex;
+  flex-direction: row;
+  width: 430rpx;
   height: 45px;
   background-color: white;
+  color:black;
+  justify-content: flex-end;
 
-  border-radius: 25rpx;
-  margin: 10px 0;
+}
+.formtxt{
+  color: #646060;
+  font-size: 18px;
+  width: 60px;
+  text-align: left;
 }
 .picker{
   color: #878787;
-  text-align: center;
-  width: 530rpx;
+  text-align: right;
+  width: 430rpx;
   height: 45px;
   background-color: white;
-  border-radius: 25rpx;
-  margin: 10px 0;
+
   align-content: center;
   line-height: 45px;
 }
+.afterpicker{
+  color: black;
+}
 .radio_group{
-  width: 530rpx;
+  width: 430rpx;
   height: 45px;
   color: #878787;
   border:1 solid red;
   align-items: center;
   line-height: 45px;
+}
+.center{
+   text-align: right;
+   margin-right:10px ;
 }

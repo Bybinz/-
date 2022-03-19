@@ -1,34 +1,83 @@
 <!--pages/register/register.wxml-->
 <view class="container" style="height:{{scheight}}px">
-  <image src="/images/背景.png" class="bgimg" style="height:{{scheight}}px"></image>
+  <view class="returncontainer" bindtap="reback">
+    <image class="return" src="https://cloud-minapp-40414.cloud.ifanrusercontent.com/1lnfagSVfRoWO5tm.png"></image>
+    <text class="return_txt">返回</text>
+  </view>
+  <image src="https://cloud-minapp-40414.cloud.ifanrusercontent.com/1lmsFwEiog8vuCZl.png" class="bgimg"
+    style="height:{{scheight}}px"></image>
   <form bindsubmit="formsubmit" class="form_c">
-    <input type="text" class="ipt" name="username" focus="focus" placeholder="请输入姓名" placeholder-class="center" />
-    <radio-group bindchange="radiochange" class="radio_group" name="sex">
-      <view class="gender">性别：
-        <label class="radio">
-          <radio value='0' checked="true">男</radio>
-        </label>
-        <label class="radio">
-          <radio value="1">女</radio>
-        </label>
+    <view class="infocontainer">
+      <view class="itemcontainer lrtr">
+        <text class="formtxt">姓名</text>
+        <input type="text" class="ipt noborder" name="username" focus="focus" placeholder="请输入姓名"
+          placeholder-class="center" bindinput="nameinput" />
       </view>
-    </radio-group>
-    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}" name="education">
-      <view class="picker">
-        请选择学历：{{array[index]}}
+      <view class="itemcontainer ">
+        <text class="formtxt">性别</text>
+        <radio-group bindchange="radiochange" class="radio_group" name="sex">
+          <view class="gender">
+            <label class="radio">
+              <radio value='0' checked="true">男</radio>
+            </label>
+            <label class="radio">
+              <radio value="1">女</radio>
+            </label>
+          </view>
+        </radio-group>
       </view>
-    </picker>
-    
-    <input type="text" class="ipt" name="schoolName" placeholder="请输入学校" placeholder-class="center" />
-    <input type="text" class="ipt" name="major" placeholder="请输入专业" placeholder-class="center" />
-    <input type="number" class="ipt" name="sno" placeholder="请输入学号" placeholder-class="center" />
-    <input type="number" class="ipt" name="qqno" placeholder="请输入QQ号" placeholder-class="center" />
-    <input type="number" class="ipt" name="phone" placeholder="请输入手机号码" placeholder-class="center" />
+      <view class="itemcontainer ">
+        <text class="formtxt">学历</text>
+        <picker bindchange="bindPickerChange" value="{{index1}}" range="{{array}}" name="education">
+          <view class="picker {{index!=0?'afterpicker':''}}">
+            <text wx:if="{{index==0}}">请选择学历</text>{{index!=0?array[index]:''}}
+          </view>
+        </picker>
+      </view>
+      <view class="itemcontainer ">
+        <text class="formtxt">学校</text>
+        <picker bindchange="bindPickerChange1" value="{{index1}}" range="{{array1}}" name="schoolName">
+          <view class="picker {{index1!=0?'afterpicker':''}}">
+            <text wx:if="{{index1==0}}">请选择学校</text>{{index1!=0?array1[index1]:''}}
+          </view>
+        </picker>
+      </view>
+      <view class="itemcontainer ">
+        <text class="formtxt">专业</text>
+        <picker bindchange="bindPickerChange2" value="{{index2}}" range="{{departmentname}}" wx:if="{{index1!=0}}"
+          name="major" bindcancel="canclechoose">
+          <view class="picker {{!index2?'':'afterpicker'}}">
+            <text wx:if="{{index2==''}}">请选择专业</text>{{departmentname[index2]}}
+          </view>
+        </picker>
+        <view type="text" class="ipt1" bindtap="checkschool" wx:else>
+          请选择专业
+        </view>
+      </view>
+      <!-- <input type="text" class="ipt" name="schoolName" placeholder="请输入学校" placeholder-class="center" bindfocus="getfocus" bindblur="losefocus"/> -->
+      <!-- <scroll-view scroll-y="true" wx:if="{{isclick}}" bindscrolltoupper="upper" bindscrolltolower="lower" scroll-top="0" class="province">
+      <view class="scroll-view-item1" 
+        bindtap="chooseprocince" wx:for="{{10}}">
+        太原理工大学</view>
+    </scroll-view> -->
+      <view class="itemcontainer ">
+        <text class="formtxt">学号</text>
+        <input type="number" class="ipt noborder" name="sno" placeholder="请输入学号" placeholder-class="center"
+          bindinput="snoinput" />
+      </view>
+      <view class="itemcontainer ">
+        <text class="formtxt">QQ号</text>
+        <input type="number" class="ipt noborder" name="qqno" placeholder="请输入QQ号" placeholder-class="center"
+          bindinput="qqinput" />
+      </view>
+      <view class="itemcontainer lrbr noborder">
+        <text class="formtxt">手机号</text>
+        <input type="number" class="ipt noborder" name="phone" placeholder="请输入手机号码" placeholder-class="center"
+          bindinput="phoneinput" />
+      </view>
 
-    <button form-type="submit" class="btn"><text>立即注册</text></button>
-
-
+      <button form-type="submit" class="btn"><text>立即注册</text></button>
+    </view>
   </form>
-
 
 </view>

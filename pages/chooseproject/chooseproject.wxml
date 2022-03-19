@@ -1,0 +1,18 @@
+<!--pages/chooseproject/chooseproject.wxml-->
+<view class="container">
+  <view class="phoneinfo"></view>
+  <view class="navigation">
+    <view class="returncontainer">
+      <image class="return" src="https://cloud-minapp-40414.cloud.ifanrusercontent.com/1lmsFwg5ePklJoS3.png"></image>
+      <text class="return_txt" bindtap="reback">返回</text> 
+    </view>
+    <text class="navigation_txt">选择科目</text>
+  </view>
+    <view class="itemscontainer" wx:for="{{projects}}" bindtap="changestatus" data-id="{{item.dataId}}">
+      <text class="txt3">{{item.dataId}}{{item.subject}}</text>
+      <image class="plus"
+        src="{{!item.isCollection?'https://cloud-minapp-40414.cloud.ifanrusercontent.com/1lmsFwO2sttFPvEM.png':'https://cloud-minapp-40414.cloud.ifanrusercontent.com/1lnfaW07Nj0BuPn1.png'}}">
+      </image>
+    </view>
+  
+</view>

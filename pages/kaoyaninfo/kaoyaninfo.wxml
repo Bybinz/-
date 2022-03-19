@@ -1,0 +1,38 @@
+<!--pages/kaoyaninfo/kaoyaninfo.wxml-->
+<view class="container">
+  <view class="phoneinfo"></view>
+  <view class="navigation">
+  <view class="returncontainer" bindtap="reback">
+    <image class="return" src="https://cloud-minapp-40414.cloud.ifanrusercontent.com/1lmsFwg5ePklJoS3.png"></image>
+    <text class="return_txt">返回</text>
+  </view>
+    <text class="navigation_txt">考研资料</text>
+  </view>
+  <view class="container1">
+    <view class="titlecontainer">
+      <view class="title {{selected1?'selected':''}}" bindtap="changetitle">自主命题专业课</view>
+      <view class="title {{selected1?'':'selected'}}" bindtap="changetitle1">统考/联考专业课</view>
+    </view>
+  </view>
+  <view class="container2" wx:if="{{selected1}}">
+    <view class="itemscontainer" wx:for="{{provinceList}}" data-pro="{{item.location}}" bindtap="chooseprovince">
+      <text class="txt3">{{item.location}}</text>
+      <view class="scontainer">
+        <image class="pinglun" src="https://cloud-minapp-40414.cloud.ifanrusercontent.com/1lmsFw05VvxIglcE.png"></image>
+        <text class="txt">高校{{item.schoolCount}}所</text>
+      </view>
+      <view class="scontainer">
+        <image class="pinglun" src="https://cloud-minapp-40414.cloud.ifanrusercontent.com/1lmsFwHNf7UNl9FK.png"></image>
+        <text class="txt">真题{{item.dataCount}}套</text>
+      </view>
+      <image class="img2" src="https://cloud-minapp-40414.cloud.ifanrusercontent.com/1lmsFwHDi3SL4C58.png"></image>
+    </view>
+  </view>
+  <view class="container2" wx:else>
+    <view class="itemscontainer" wx:for="{{infoList}}" bindtap="changestatus" data-id="{{item.dataId}}">
+      <text class="txt3">{{item.dataId}}{{item.subject}}</text>
+      <image class="plus" src="{{!item.isCollection?'https://cloud-minapp-40414.cloud.ifanrusercontent.com/1lmsFwO2sttFPvEM.png':'https://cloud-minapp-40414.cloud.ifanrusercontent.com/1lnfaW07Nj0BuPn1.png'}}"  ></image>
+    </view>
+  </view>
+
+</view>

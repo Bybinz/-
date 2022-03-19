@@ -1,0 +1,35 @@
+<!--pages/school_detail/school_detail.wxml-->
+<view class="container">
+  <view class="container1">
+    <view class="container11">
+      <text class="txt">{{schoolname}}</text>
+      <image class="plus211" wx:if="{{schdetailinfo.level=='985'}}" src="https://cloud-minapp-40414.cloud.ifanrusercontent.com/1lmsFwqd7WgN0SvL.png"></image>
+      <image class="plus211" wx:if="{{schdetailinfo.level=='211'}}" src="https://cloud-minapp-40414.cloud.ifanrusercontent.com/1lmsFwid576uJqqT.png"></image>
+      <image class="plusyiliu" wx:if="{{schdetailinfo.level=='985'||schdetailinfo.level=='211'}}" src="https://cloud-minapp-40414.cloud.ifanrusercontent.com/1lmsFwBzU3o9YHud.png"></image>
+    </view>
+    <view class="container12">
+      <text class="txt1">英文名</text>
+      <text class="txt1">{{schdetailinfo.englishname}}</text>
+    </view>
+  </view>
+  <view class="container2">
+    <view class="container21">
+      <view class="bluecol"></view>
+      <text class="txt2">学校概况</text>
+    </view>
+    <textarea name="" id="" cols="50" rows="10" class="txt3">
+      {{schdetailinfo.schoolInfo}}</textarea>
+  </view>
+  <view class="container3">
+    <view class="container31">
+      <view class="bluecol"></view>
+      <text class="txt2">更多信息</text>
+    </view>
+    <view class="container32">
+      <view class="itemscontainer" wx:for="{{fclist}}" data-id="{{item.name}}" bindtap="todetail">
+        <text class="txt4">{{item.name}}</text>
+        <image class="plus" src="https://cloud-minapp-40414.cloud.ifanrusercontent.com/1lmsFwHDi3SL4C58.png"></image>
+      </view>
+    </view>
+  </view>
+</view>

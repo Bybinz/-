@@ -1,0 +1,11 @@
+/* pages/chooseproject/chooseproject.wxss */
+@import '/pages/navigations.wxss';
+@import '/pages/chooseschool/chooseschool.wxss';
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+}

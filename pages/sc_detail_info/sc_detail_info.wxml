@@ -1,0 +1,14 @@
+<!--pages/sc_detail_info/sc_detail_info.wxml-->
+<view class="container">
+  <view class="phoneinfo"></view>
+  <view class="navigation">
+  <view class="returncontainer" bindtap="reback">
+    <image class="return" src="https://cloud-minapp-40414.cloud.ifanrusercontent.com/1lmsFwg5ePklJoS3.png"></image>
+    <text class="return_txt">返回</text>
+  </view>
+    <text class="navigation_txt">{{fucid}}</text>
+  </view>
+  <textarea name="" id="" cols="50" rows="100" class="txt">
+   {{detailinfo}}
+  </textarea>
+</view>
